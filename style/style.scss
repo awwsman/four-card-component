@@ -67,7 +67,7 @@ article {
   // border: 2px solid red;
   padding: 1.5rem;
   // width: 400px;
-  box-shadow: 0 0 6px 3px $Grayish-Blue;
+  box-shadow: 0 10px 20px 3px $Grayish-Blue;
   h2{
     color: $Very-Dark-Blue;
   }
@@ -93,24 +93,24 @@ article {
 }
 
 .supervisor {
-border-top:6px solid $Cyan ;
+border-top:4px solid $Cyan ;
 border-radius: 5px;
 grid-area: supervisor;
 
 }
 .team {
 //   background: url("../images/icon-team-builder.svg") no-repeat right bottom;
-border-top:6px solid $Red;
+border-top:4px solid $Red;
 border-radius: 5px;
 grid-area: team;
 }
 .karma {
-  border-top:6px solid $Orange ;
+  border-top:4px solid $Orange ;
   border-radius: 5px;
   grid-area: karma;
 }
 .calculator {
-  border-top:6px solid $Blue ;
+  border-top:4px solid $Blue ;
   border-radius: 5px;
   grid-area: calculator;
 }

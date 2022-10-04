@@ -42,7 +42,7 @@ header p {
 
 article {
   padding: 1.5rem;
-  box-shadow: 0 0 6px 3px hsl(229deg, 6%, 66%);
+  box-shadow: 0 10px 20px 3px hsl(229deg, 6%, 66%);
 }
 article h2 {
   color: hsl(234deg, 12%, 34%);
@@ -62,25 +62,25 @@ article p {
 }
 
 .supervisor {
-  border-top: 6px solid hsl(180deg, 62%, 55%);
+  border-top: 4px solid hsl(180deg, 62%, 55%);
   border-radius: 5px;
   grid-area: supervisor;
 }
 
 .team {
-  border-top: 6px solid hsl(0deg, 78%, 62%);
+  border-top: 4px solid hsl(0deg, 78%, 62%);
   border-radius: 5px;
   grid-area: team;
 }
 
 .karma {
-  border-top: 6px solid hsl(34deg, 97%, 64%);
+  border-top: 4px solid hsl(34deg, 97%, 64%);
   border-radius: 5px;
   grid-area: karma;
 }
 
 .calculator {
-  border-top: 6px solid hsl(212deg, 86%, 64%);
+  border-top: 4px solid hsl(212deg, 86%, 64%);
   border-radius: 5px;
   grid-area: calculator;
 }
