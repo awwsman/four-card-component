@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+$Red: hsl(0, 78%, 62%);
+$Cyan: hsl(180, 62%, 55%);
+$Orange: hsl(34, 97%, 64%);
+$Blue: hsl(212, 86%, 64%);
+
+// Neutral
+$Very-Dark-Blue: hsl(234, 12%, 34%);
+$Grayish-Blue: hsl(229, 6%, 66%);
+$Very-Light-Gray: hsl(0, 0%, 98%);
+
+$font-family: "Poppins", sans-serif;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-family;
+}
+
+header {
+  margin-top: 3rem;
+  text-align: center;
+
+  h1 {
+    font-weight: 200;
+    font-size: 2.5rem;
+    color: $Grayish-Blue;
+  }
+  h2 {
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: $Very-Dark-Blue;
+  }
+  p {
+    // border: 2px solid red;
+    width: 40%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem;
+    color: $Grayish-Blue;
+  }
+}
+
+.container{
+  // width: 700px;
+  margin: 4rem 8rem;
+    // border: 2px solid red;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+    gap: 2rem;
+    grid-template-areas: 
+    ". team ."
+    "supervisor  team calculator"
+    "supervisor karma calculator"
+    ". karma .";
+    
+    
+
+}
+
+article {
+  // border: 2px solid red;
+  padding: 1.5rem;
+  // width: 400px;
+  box-shadow: 0 0 6px 3px $Grayish-Blue;
+  h2{
+    color: $Very-Dark-Blue;
+  }
+  p{
+    color: $Grayish-Blue;
+  }
+
+  .icons{
+//    position: relative;
+    // border: 2px solid red;
+    margin-top: 2rem;
+    
+    img{
+        position: relative;
+        left: 80%;
+        // margin-right: 3rem;
+    }
+  }
+
+  p {
+    padding-top: 1rem;
+  }
+}
+
+.supervisor {
+border-top:6px solid $Cyan ;
+border-radius: 5px;
+grid-area: supervisor;
+
+}
+.team {
+//   background: url("../images/icon-team-builder.svg") no-repeat right bottom;
+border-top:6px solid $Red;
+border-radius: 5px;
+grid-area: team;
+}
+.karma {
+  border-top:6px solid $Orange ;
+  border-radius: 5px;
+  grid-area: karma;
+}
+.calculator {
+  border-top:6px solid $Blue ;
+  border-radius: 5px;
+  grid-area: calculator;
+}
+
+
+@media  screen and (max-width:1200px) {
+
+  header{
+    margin: 3rem ;
+    h1,h2{
+      font-size: 2rem;
+    }
+    p{
+      width: 100%;
+      // border: 2px solid red;
+    }
+  }
+  .container{
+    margin: 3rem;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "supervisor"
+    "team"
+    "karma"
+    "calculator";
+    justify-content: center;
+  }
+}
